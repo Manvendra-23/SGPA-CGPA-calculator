@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA & SGPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CGPA & SGPA Calculator</h1>
+            <p>Calculate your CGPA and SGPA easily!</p>
+        </header>
+
+        <div class="calculator">
+            <div class="form-section">
+                <h2>Enter Grades for SGPA</h2>
+                <form id="sgpaForm">
+                    <div class="subject-input">
+                        <input type="number" id="grade1" placeholder="Grade for Subject 1" required>
+                        <input type="number" id="credit1" placeholder="Credits for Subject 1" required>
+                    </div>
+                    <div class="subject-input">
+                        <input type="number" id="grade2" placeholder="Grade for Subject 2" required>
+                        <input type="number" id="credit2" placeholder="Credits for Subject 2" required>
+                    </div>
+                    <div class="subject-input">
+                        <input type="number" id="grade3" placeholder="Grade for Subject 3" required>
+                        <input type="number" id="credit3" placeholder="Credits for Subject 3" required>
+                    </div>
+                    <div class="subject-input">
+                        <input type="number" id="grade4" placeholder="Grade for Subject 4" required>
+                        <input type="number" id="credit4" placeholder="Credits for Subject 4" required>
+                    </div>
+                    <div class="subject-input">
+                        <input type="number" id="grade5" placeholder="Grade for Subject 5" required>
+                        <input type="number" id="credit5" placeholder="Credits for Subject 5" required>
+                    </div>
+                    <button type="submit">Calculate SGPA</button>
+                </form>
+            </div>
+
+            <div class="form-section">
+                <h2>Enter Grades for CGPA</h2>
+                <form id="cgpaForm">
+                    <div class="subject-input">
+                        <input type="number" id="cgpaGrade1" placeholder="Grade for Subject 1" required>
+                        <input type="number" id="cgpaCredit1" placeholder="Credits for Subject 1" required>
+                    </div>
+                    <div class="subject-input">
+                        <input type="number" id="cgpaGrade2" placeholder="Grade for Subject 2" required>
+                        <input type="number" id="cgpaCredit2" placeholder="Credits for Subject 2" required>
+                    </div>
+                    <div class="subject-input">
+                        <input type="number" id="cgpaGrade3" placeholder="Grade for Subject 3" required>
+                        <input type="number" id="cgpaCredit3" placeholder="Credits for Subject 3" required>
+                    </div>
+                    <div class="subject-input">
+                        <input type="number" id="cgpaGrade4" placeholder="Grade for Subject 4" required>
+                        <input type="number" id="cgpaCredit4" placeholder="Credits for Subject 4" required>
+                    </div>
+                    <button type="submit">Calculate CGPA</button>
+                </form>
+            </div>
+
+            <div class="result">
+                <h3>Results:</h3>
+                <p>SGPA: <span id="sgpaResult">0.00</span></p>
+                <p>CGPA: <span id="cgpaResult">0.00</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
